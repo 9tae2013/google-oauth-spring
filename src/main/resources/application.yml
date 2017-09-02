@@ -1,0 +1,18 @@
+security:
+  oauth2:
+    client:
+      clientId: xxx.apps.googleusercontent.com
+      clientSecret: sss
+      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+      scope:
+        - openid
+        - email
+        - profile
+    resource:
+      userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
